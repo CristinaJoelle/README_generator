@@ -17,10 +17,10 @@ const questions = [
     message: "Please write a description of your project.",
   },
   {
-    type: "list",
+    type: "input",
     name: "installation",
-    message: "Would you like to use npm i for installation?",
-    choices: ["Yes", "No"],
+    message: "How would you like the user to install the dependencies?",
+    default: "npm i",
   },
   {
     type: "input",
@@ -43,8 +43,8 @@ const questions = [
     name: "license",
     message: "What is the license you would like to use?",
     choices: [
-      "Apache 2.o License",
-      "Eclipse License 1.0",
+      "Apache 2.0 License",
+      "Eclipse Public License 1.0",
       "The MIT License",
       "Mozilla Public License 2.0",
     ],
